@@ -1,0 +1,22 @@
+1- Expense List( amount, date(user adds),category name, description(not required)
+
+
+2- Category List (name-from database)
+
+
+3- Form: New Expense (
+  amount (required),
+  date (required),
+  category (required, dropdown from Category List),
+  description (optional)
+)
+-After save, new Expense form is reopened
+
+
+4- Form: New Category (
+  name (required) - save to database
+)
+
+
+5- Summary View:
+[Category Name] / [Total Amount]

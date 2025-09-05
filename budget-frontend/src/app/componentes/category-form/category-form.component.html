@@ -1,0 +1,18 @@
+<div class="container my-4">
+  <div class="w-50 mx-auto">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" class="glass-card p-4">
+      <h5 class="text-light mb-4 text-center">Add Category</h5>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Name</label>
+        <input type="text" formControlName="name" class="form-control"
+               [class.is-invalid]="form.get('name')?.invalid && form.get('name')?.touched">
+        <div class="invalid-feedback">Please enter a category name.</div>
+      </div>
+
+      <button class="btn btn-success w-100 fw-bold" type="submit" [disabled]="form.invalid">
+        Create
+      </button>
+    </form>
+  </div>
+</div>

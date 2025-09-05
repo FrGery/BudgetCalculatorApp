@@ -1,0 +1,11 @@
+.dark-card {
+  background-color: rgba(30, 30, 30, 0.59);     /* sötét szürke */
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  border-radius: 0.5rem;
+  color: #f1f1f1;
+  transition: background 0.2s ease;
+}
+
+.dark-card:hover {
+  background-color: #2a2a2a;
+}

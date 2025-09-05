@@ -1,0 +1,13 @@
+canvas {
+  width: 100% !important;
+  max-width: 300px;
+  height: auto !important;
+}
+.glass-card {
+  background: rgba(40, 40, 40, 0.32); /* áttetsző sötétszürke */
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #f1f1f1;
+}

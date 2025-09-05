@@ -1,0 +1,31 @@
+<div class="container my-4">
+  <div class="w-75 mx-auto">
+    <div *ngFor="let expense of expenses" class="card glass-card mb-3">
+      <div class="card-body p-3 fs-6">
+
+        <div class="row mb-1 border-bottom py-1">
+          <div class="col-4 border-end text-muted fw-semibold small">Category</div>
+          <div class="col-8">{{ expense.category }}</div>
+        </div>
+
+        <div class="row mb-1 border-bottom py-1">
+          <div class="col-4 border-end text-muted fw-semibold small">Description</div>
+          <div class="col-8">{{ expense.description || '-' }}</div>
+        </div>
+
+        <div class="row mb-1 border-bottom py-1">
+          <div class="col-4 border-end text-muted fw-semibold small">Date</div>
+          <div class="col-8">{{ expense.date | date:'yyyy.MM.dd. HH:mm' }}</div>
+        </div>
+
+        <div class="row pt-2">
+          <div class="col-4 border-end text-muted fw-semibold small">Amount</div>
+          <div class="col-8 fw-bold fs-4 amount-highlight text-end">
+            {{ expense.amount | number:'1.0-0' }} Ft
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
